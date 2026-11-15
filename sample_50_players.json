@@ -1,0 +1,1150 @@
+{
+  "player_01": {
+    "id": "player_01",
+    "name": "ต้น",
+    "contact": "ทีมซานต้า 🎅",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 12,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 190,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:10:15",
+    "lastActive": "15/11/2026 12:45:30"
+  },
+  "player_02": {
+    "id": "player_02",
+    "name": "กิ๊ฟท์",
+    "contact": "กลุ่มเรนเดียร์ 1 🦌",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 13,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 204,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:12:17",
+    "lastActive": "15/11/2026 12:44:31"
+  },
+  "player_03": {
+    "id": "player_03",
+    "name": "สมชาย",
+    "contact": "กลุ่มเรนเดียร์ 2 🦌",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 14,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 218,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:14:19",
+    "lastActive": "15/11/2026 12:43:32"
+  },
+  "player_04": {
+    "id": "player_04",
+    "name": "มายด์",
+    "contact": "ทีมเอลฟ์หิมะ 🧝",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 15,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 232,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:16:21",
+    "lastActive": "15/11/2026 12:42:33"
+  },
+  "player_05": {
+    "id": "player_05",
+    "name": "เอกชัย",
+    "contact": "บ้านขนมปังขิง 🍪",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 12,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 246,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:18:23",
+    "lastActive": "15/11/2026 12:41:34"
+  },
+  "player_06": {
+    "id": "player_06",
+    "name": "ป๊อป",
+    "contact": "ดาวเบธเลเฮม ⭐",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 13,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 260,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:20:25",
+    "lastActive": "15/11/2026 12:40:35"
+  },
+  "player_07": {
+    "id": "player_07",
+    "name": "แบงค์",
+    "contact": "ทีม Marketing 📈",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 14,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 274,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:22:27",
+    "lastActive": "15/11/2026 12:39:36"
+  },
+  "player_08": {
+    "id": "player_08",
+    "name": "ตาล",
+    "contact": "ทีม IT Support 💻",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 15,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 288,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:24:29",
+    "lastActive": "15/11/2026 12:38:37"
+  },
+  "player_09": {
+    "id": "player_09",
+    "name": "พลอย",
+    "contact": "ทีม HR & Admin 📋",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 12,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 302,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:26:31",
+    "lastActive": "15/11/2026 12:37:38"
+  },
+  "player_10": {
+    "id": "player_10",
+    "name": "เมย์",
+    "contact": "ทีม Sales 💼",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 13,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 316,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:28:33",
+    "lastActive": "15/11/2026 12:36:39"
+  },
+  "player_11": {
+    "id": "player_11",
+    "name": "โอม",
+    "contact": "ทีมซานต้า 🎅",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 14,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 330,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:30:35",
+    "lastActive": "15/11/2026 12:35:40"
+  },
+  "player_12": {
+    "id": "player_12",
+    "name": "บอส",
+    "contact": "กลุ่มเรนเดียร์ 1 🦌",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 15,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 344,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:32:37",
+    "lastActive": "15/11/2026 12:34:41"
+  },
+  "player_13": {
+    "id": "player_13",
+    "name": "เจน",
+    "contact": "กลุ่มเรนเดียร์ 2 🦌",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 12,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 358,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:34:39",
+    "lastActive": "15/11/2026 12:33:42"
+  },
+  "player_14": {
+    "id": "player_14",
+    "name": "นิว",
+    "contact": "ทีมเอลฟ์หิมะ 🧝",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 13,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 372,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:36:41",
+    "lastActive": "15/11/2026 12:32:43"
+  },
+  "player_15": {
+    "id": "player_15",
+    "name": "อาร์ม",
+    "contact": "บ้านขนมปังขิง 🍪",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 14,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 386,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:38:43",
+    "lastActive": "15/11/2026 12:31:44"
+  },
+  "player_16": {
+    "id": "player_16",
+    "name": "ทราย",
+    "contact": "ดาวเบธเลเฮม ⭐",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 15,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 400,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:40:45",
+    "lastActive": "15/11/2026 12:30:45"
+  },
+  "player_17": {
+    "id": "player_17",
+    "name": "มุก",
+    "contact": "ทีม Marketing 📈",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 12,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "totalTimeSpent": 414,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:42:47",
+    "lastActive": "15/11/2026 12:29:46"
+  },
+  "player_18": {
+    "id": "player_18",
+    "name": "นนท์",
+    "contact": "ทีม IT Support 💻",
+    "currentStage": 5,
+    "stagesCompleted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "totalStars": 13,
+    "starsDetail": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "totalTimeSpent": 428,
+    "completedAll": true,
+    "completedAt": "15/11/2026 12:44:49",
+    "lastActive": "15/11/2026 12:28:47"
+  },
+  "player_19": {
+    "id": "player_19",
+    "name": "พีท",
+    "contact": "ทีม HR & Admin 📋",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 7,
+    "starsDetail": [
+      3,
+      2,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 320,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:27:48"
+  },
+  "player_20": {
+    "id": "player_20",
+    "name": "แพรว",
+    "contact": "ทีม Sales 💼",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 8,
+    "starsDetail": [
+      3,
+      3,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 330,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:26:49"
+  },
+  "player_21": {
+    "id": "player_21",
+    "name": "กอล์ฟ",
+    "contact": "ทีมซานต้า 🎅",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 9,
+    "starsDetail": [
+      3,
+      2,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 340,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:45:50"
+  },
+  "player_22": {
+    "id": "player_22",
+    "name": "แนน",
+    "contact": "กลุ่มเรนเดียร์ 1 🦌",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 7,
+    "starsDetail": [
+      3,
+      3,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 350,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:44:51"
+  },
+  "player_23": {
+    "id": "player_23",
+    "name": "บิว",
+    "contact": "กลุ่มเรนเดียร์ 2 🦌",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 8,
+    "starsDetail": [
+      3,
+      2,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 360,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:43:52"
+  },
+  "player_24": {
+    "id": "player_24",
+    "name": "จุ๊บ",
+    "contact": "ทีมเอลฟ์หิมะ 🧝",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 9,
+    "starsDetail": [
+      3,
+      3,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 370,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:42:53"
+  },
+  "player_25": {
+    "id": "player_25",
+    "name": "กานต์",
+    "contact": "บ้านขนมปังขิง 🍪",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 7,
+    "starsDetail": [
+      3,
+      2,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 380,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:41:54"
+  },
+  "player_26": {
+    "id": "player_26",
+    "name": "ฟลุ๊ค",
+    "contact": "ดาวเบธเลเฮม ⭐",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 8,
+    "starsDetail": [
+      3,
+      3,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 390,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:40:30"
+  },
+  "player_27": {
+    "id": "player_27",
+    "name": "โบว์",
+    "contact": "ทีม Marketing 📈",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 9,
+    "starsDetail": [
+      3,
+      2,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 400,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:39:31"
+  },
+  "player_28": {
+    "id": "player_28",
+    "name": "นัท",
+    "contact": "ทีม IT Support 💻",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 7,
+    "starsDetail": [
+      3,
+      3,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 410,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:38:32"
+  },
+  "player_29": {
+    "id": "player_29",
+    "name": "แตงโม",
+    "contact": "ทีม HR & Admin 📋",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 8,
+    "starsDetail": [
+      3,
+      2,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 420,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:37:33"
+  },
+  "player_30": {
+    "id": "player_30",
+    "name": "เบนซ์",
+    "contact": "ทีม Sales 💼",
+    "currentStage": 4,
+    "stagesCompleted": [
+      1,
+      2,
+      3
+    ],
+    "totalStars": 9,
+    "starsDetail": [
+      3,
+      3,
+      2,
+      0,
+      0
+    ],
+    "totalTimeSpent": 430,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:36:34"
+  },
+  "player_31": {
+    "id": "player_31",
+    "name": "วิว",
+    "contact": "ทีมซานต้า 🎅",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 5,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 335,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:35:35"
+  },
+  "player_32": {
+    "id": "player_32",
+    "name": "ตั้ม",
+    "contact": "กลุ่มเรนเดียร์ 1 🦌",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 6,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 343,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:34:36"
+  },
+  "player_33": {
+    "id": "player_33",
+    "name": "ฟ้า",
+    "contact": "กลุ่มเรนเดียร์ 2 🦌",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 5,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 351,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:33:37"
+  },
+  "player_34": {
+    "id": "player_34",
+    "name": "ปอนด์",
+    "contact": "ทีมเอลฟ์หิมะ 🧝",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 6,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 359,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:32:38"
+  },
+  "player_35": {
+    "id": "player_35",
+    "name": "ออม",
+    "contact": "บ้านขนมปังขิง 🍪",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 5,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 367,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:31:39"
+  },
+  "player_36": {
+    "id": "player_36",
+    "name": "มิ้นท์",
+    "contact": "ดาวเบธเลเฮม ⭐",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 6,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 375,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:30:40"
+  },
+  "player_37": {
+    "id": "player_37",
+    "name": "เต้",
+    "contact": "ทีม Marketing 📈",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 5,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 383,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:29:41"
+  },
+  "player_38": {
+    "id": "player_38",
+    "name": "แอน",
+    "contact": "ทีม IT Support 💻",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 6,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 391,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:28:42"
+  },
+  "player_39": {
+    "id": "player_39",
+    "name": "โบ๊ท",
+    "contact": "ทีม HR & Admin 📋",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 5,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 399,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:27:43"
+  },
+  "player_40": {
+    "id": "player_40",
+    "name": "ดาว",
+    "contact": "ทีม Sales 💼",
+    "currentStage": 3,
+    "stagesCompleted": [
+      1,
+      2
+    ],
+    "totalStars": 6,
+    "starsDetail": [
+      3,
+      2,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 407,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:26:44"
+  },
+  "player_41": {
+    "id": "player_41",
+    "name": "ฟิล์ม",
+    "contact": "ทีมซานต้า 🎅",
+    "currentStage": 2,
+    "stagesCompleted": [
+      1
+    ],
+    "totalStars": 3,
+    "starsDetail": [
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 290,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:45:45"
+  },
+  "player_42": {
+    "id": "player_42",
+    "name": "หนิง",
+    "contact": "กลุ่มเรนเดียร์ 1 🦌",
+    "currentStage": 2,
+    "stagesCompleted": [
+      1
+    ],
+    "totalStars": 3,
+    "starsDetail": [
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 296,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:44:46"
+  },
+  "player_43": {
+    "id": "player_43",
+    "name": "แดน",
+    "contact": "กลุ่มเรนเดียร์ 2 🦌",
+    "currentStage": 2,
+    "stagesCompleted": [
+      1
+    ],
+    "totalStars": 3,
+    "starsDetail": [
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 302,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:43:47"
+  },
+  "player_44": {
+    "id": "player_44",
+    "name": "ลูกเกด",
+    "contact": "ทีมเอลฟ์หิมะ 🧝",
+    "currentStage": 2,
+    "stagesCompleted": [
+      1
+    ],
+    "totalStars": 3,
+    "starsDetail": [
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 308,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:42:48"
+  },
+  "player_45": {
+    "id": "player_45",
+    "name": "ปาล์ม",
+    "contact": "บ้านขนมปังขิง 🍪",
+    "currentStage": 2,
+    "stagesCompleted": [
+      1
+    ],
+    "totalStars": 3,
+    "starsDetail": [
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 314,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:41:49"
+  },
+  "player_46": {
+    "id": "player_46",
+    "name": "ปุย",
+    "contact": "ดาวเบธเลเฮม ⭐",
+    "currentStage": 2,
+    "stagesCompleted": [
+      1
+    ],
+    "totalStars": 3,
+    "starsDetail": [
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 320,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:40:50"
+  },
+  "player_47": {
+    "id": "player_47",
+    "name": "อาร์ท",
+    "contact": "ทีม Marketing 📈",
+    "currentStage": 1,
+    "stagesCompleted": [],
+    "totalStars": 0,
+    "starsDetail": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 209,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:39:51"
+  },
+  "player_48": {
+    "id": "player_48",
+    "name": "น้ำ",
+    "contact": "ทีม IT Support 💻",
+    "currentStage": 1,
+    "stagesCompleted": [],
+    "totalStars": 0,
+    "starsDetail": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 213,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:38:52"
+  },
+  "player_49": {
+    "id": "player_49",
+    "name": "แชมป์",
+    "contact": "ทีม HR & Admin 📋",
+    "currentStage": 1,
+    "stagesCompleted": [],
+    "totalStars": 0,
+    "starsDetail": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 217,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:37:53"
+  },
+  "player_50": {
+    "id": "player_50",
+    "name": "จอย",
+    "contact": "ทีม Sales 💼",
+    "currentStage": 1,
+    "stagesCompleted": [],
+    "totalStars": 0,
+    "starsDetail": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "totalTimeSpent": 221,
+    "completedAll": false,
+    "completedAt": null,
+    "lastActive": "15/11/2026 12:36:54"
+  }
+}

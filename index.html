@@ -257,7 +257,7 @@
           class="btn-festive px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/50 text-amber-200 text-xs sm:text-sm font-semibold flex items-center gap-1 cursor-pointer"
           title="แก้ไขชื่อผู้เล่นและข้อมูลติดต่อ">
           <span>👤</span>
-          <span id="nav-player-name" class="font-bold text-amber-300 max-w-[100px] truncate">ผู้เล่นนิรนาม</span>
+          <span id="nav-player-name" class="font-bold text-amber-300 max-w-[100px] truncate">ลงทะเบียนผู้เล่น</span>
         </button>
 
         <!-- ปุ่มกระดานผู้นำ (Leaderboard) -->
@@ -606,82 +606,38 @@
 
   
   <!-- Modal: ลงทะเบียน / ข้อมูลผู้เล่น (Player Profile Modal) -->
-  <div id="modal-player-profile" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
+  <div id="modal-player-profile" class="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4 hidden">
     <div class="bg-gradient-to-b from-[#2e0915] via-[#1a050d] to-[#0d0206] border-2 border-amber-400 rounded-3xl max-w-md w-full p-5 sm:p-6 shadow-2xl relative">
       <button id="btn-close-profile" type="button" class="absolute top-4 right-4 text-amber-200 hover:text-white text-xl cursor-pointer">✕</button>
       <div class="text-center mb-4">
         <span class="text-4xl">🎅📝</span>
         <h3 class="font-storybook text-xl sm:text-2xl font-bold text-amber-300 mt-1">ลงทะเบียนนักสืบคริสต์มาส</h3>
-        <p class="text-xs text-amber-100/70">กรอกชื่อเล่นและชื่อกลุ่มของคุณเพื่อบันทึกคะแนนและลุ้นรับรางวัล!</p>
+        <p class="text-xs text-amber-100/80 mt-1">กรุณาระบุชื่อเล่นและชื่อกลุ่มของคุณก่อนเริ่มการแข่งขัน เพื่อบันทึกสถิติและลุ้นรับรางวัล!</p>
       </div>
 
       <form id="form-player-profile" class="space-y-3.5 text-left text-xs sm:text-sm">
         <div>
-          <label class="block font-bold text-amber-300 mb-1">ชื่อเล่น <span class="text-red-400">*</span></label>
-          <input id="input-player-name" type="text" required placeholder="เช่น บอส, กิ๊ฟท์, แบงค์, พลอย"
-            class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-amber-400/40 text-amber-100 focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder:text-stone-500 text-xs sm:text-sm" />
+          <label class="block font-bold text-amber-300 mb-1">ชื่อเล่นของคุณ <span class="text-red-400">*</span></label>
+          <input id="input-player-name" type="text" required placeholder="เช่น บอส, มายด์, แบงค์, พลอย, ต้น"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/50 text-amber-100 focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder:text-stone-500 text-xs sm:text-sm" />
         </div>
 
         <div>
-          <label class="block font-bold text-amber-300 mb-1">ชื่อกลุ่ม / ทีม <span class="text-red-400">*</span></label>
-          <input id="input-player-contact" type="text" required placeholder="เช่น ทีมซานต้า, กวางเรนเดียร์, กลุ่ม 1, ทีม IT"
-            class="w-full px-3.5 py-2.5 rounded-xl bg-black/50 border border-amber-400/40 text-amber-100 focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder:text-stone-500 text-xs sm:text-sm" />
+          <label class="block font-bold text-amber-300 mb-1">ชื่อกลุ่ม / ทีม / แผนก <span class="text-red-400">*</span></label>
+          <input id="input-player-contact" type="text" required placeholder="เช่น กลุ่ม 1, ทีมซานต้า, แผนกบัญชี, ทีมการตลาด"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-black/60 border border-amber-400/50 text-amber-100 focus:outline-none focus:border-amber-300 focus:ring-1 focus:ring-amber-300 placeholder:text-stone-500 text-xs sm:text-sm" />
         </div>
 
-        <div class="p-2.5 rounded-xl bg-amber-950/40 border border-amber-400/30 text-[11px] text-amber-200/80 leading-relaxed">
-          💡 ข้อมูลนี้จะแสดงบน <strong>กระดานผู้นำ (Leaderboard)</strong> และใช้ในระบบ <strong>สุ่มจับสลากประกาศรางวัล</strong> ของแอดมิน
+        <div class="p-2.5 rounded-xl bg-amber-950/40 border border-amber-400/30 text-[11px] text-amber-200/90 leading-relaxed">
+          💡 ข้อมูลนี้จะแสดงบน <strong>กระดานผู้นำ (Leaderboard)</strong> และใช้ใน <strong>ระบบสุ่มจับสลากประกาศรางวัล</strong> ของแอดมิน
         </div>
 
         <div class="pt-2 flex items-center gap-2">
-          <button type="submit" class="btn-festive flex-1 py-2.5 rounded-xl bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 text-white font-bold text-xs sm:text-sm border border-amber-300 shadow-lg cursor-pointer">
-            บันทึกข้อมูล & เริ่มลุย! 🎄
+          <button type="submit" class="btn-festive w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-yellow-600 hover:brightness-110 text-white font-extrabold text-sm border border-amber-300 shadow-xl cursor-pointer">
+            บันทึกข้อมูล & เข้าสู่การแข่งขัน! 🎄
           </button>
         </div>
       </form>
-    </div>
-  </div>
-
-  <!-- Modal: กระดานผู้นำสาธารณะ (Leaderboard Modal) -->
-  <div id="modal-leaderboard" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 flex items-center justify-center p-3 sm:p-5 hidden">
-    <div class="bg-gradient-to-b from-[#2b0813] to-[#140307] border-2 border-amber-400/80 rounded-3xl max-w-3xl w-full max-h-[90vh] flex flex-col p-4 sm:p-6 shadow-2xl relative">
-      <button id="btn-close-leaderboard" type="button" class="absolute top-4 right-4 text-amber-200 hover:text-white text-2xl cursor-pointer">✕</button>
-
-      <div class="text-center pb-3 border-b border-amber-400/30">
-        <div class="inline-flex items-center gap-2">
-          <span class="text-2xl sm:text-3xl">🏆</span>
-          <h3 class="font-storybook text-lg sm:text-2xl font-bold text-amber-300">กระดานผู้นำคริสต์มาส (Christmas Leaderboard)</h3>
-        </div>
-        <p class="text-xs text-amber-100/70 mt-0.5">อันดับผู้เล่นที่ทำคะแนนและพิชิตด่านได้ดีที่สุด</p>
-      </div>
-
-      <!-- แท็บตัวเลือกกระดานผู้นำ -->
-      <div class="flex items-center justify-between gap-2 py-2.5 border-b border-amber-400/20 flex-wrap">
-        <div class="flex items-center gap-2">
-          <button id="tab-lead-hall" type="button" class="btn-festive px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-500 text-red-950 border border-amber-200 shadow cursor-pointer">
-            👑 ผู้พิชิตครบ 5 ด่าน (Hall of Fame)
-          </button>
-          <button id="tab-lead-all" type="button" class="btn-festive px-3 py-1.5 rounded-xl text-xs font-bold bg-black/40 text-amber-200/70 border border-amber-400/20 hover:bg-black/60 cursor-pointer">
-            🌟 ผู้เล่นทั้งหมด
-          </button>
-        </div>
-        <!-- ค้นหาชื่อ -->
-        <input id="search-leaderboard" type="text" placeholder="🔍 ค้นหาชื่อผู้เล่น..."
-          class="px-3 py-1 rounded-xl bg-black/40 border border-amber-400/30 text-amber-100 text-xs focus:outline-none focus:border-amber-300 w-36 sm:w-48 placeholder:text-stone-500" />
-      </div>
-
-      <!-- รายการผู้เล่นในตาราง -->
-      <div class="flex-1 overflow-y-auto py-2 pr-1">
-        <div id="leaderboard-list" class="space-y-2 text-xs sm:text-sm">
-          <!-- ตารางอันดับจะถูกใส่ด้วย JS -->
-        </div>
-      </div>
-
-      <div class="pt-2 border-t border-amber-400/20 flex items-center justify-between text-xs text-amber-200/70">
-        <span>อัปเดตสถานะแบบเรียลไทม์ ⚡</span>
-        <button id="btn-ok-leaderboard" type="button" class="btn-festive px-5 py-1.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold border border-amber-300 cursor-pointer">
-          ปิดหน้าต่าง ✕
-        </button>
-      </div>
     </div>
   </div>
 
@@ -749,26 +705,43 @@
         </div>
 
         <!-- แถบเครื่องมือค้นหา, กรอง และปุ่ม Export CSV -->
+        <!-- แถบเครื่องมือค้นหา, กรองกลุ่ม, เรียงลำดับ, และปุ่มจัดการ -->
         <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
           <div class="flex items-center gap-2 flex-wrap">
             <input id="input-admin-search" type="text" placeholder="🔍 ค้นหาชื่อเล่น / ชื่อกลุ่ม..."
-              class="px-3 py-1.5 rounded-xl bg-black/40 border border-amber-400/30 text-amber-100 text-xs focus:outline-none focus:border-amber-300 w-44 sm:w-56 placeholder:text-stone-500" />
-            <select id="select-admin-filter" class="px-3 py-1.5 rounded-xl bg-black/60 border border-amber-400/30 text-amber-200 text-xs focus:outline-none cursor-pointer">
-              <option value="all">แสดงผู้เล่นทุกคน</option>
+              class="px-3 py-1.5 rounded-xl bg-black/50 border border-amber-400/40 text-amber-100 text-xs focus:outline-none focus:border-amber-300 w-40 sm:w-48 placeholder:text-stone-500" />
+            <select id="select-admin-filter" class="px-2.5 py-1.5 rounded-xl bg-black/70 border border-amber-400/40 text-amber-200 text-xs focus:outline-none cursor-pointer">
+              <option value="all">แสดงสถานะทั้งหมด</option>
               <option value="completed">เฉพาะผู้ที่ผ่านครบ 5 ด่าน (มีสิทธิ์รับรางวัล)</option>
               <option value="playing">เฉพาะผู้ที่กำลังเล่นอยู่</option>
             </select>
+            <select id="select-admin-group" class="px-2.5 py-1.5 rounded-xl bg-black/70 border border-amber-400/40 text-amber-200 text-xs focus:outline-none cursor-pointer">
+              <option value="all">ทุกกลุ่ม / ทุกทีม</option>
+            </select>
+            <select id="select-admin-sort" class="px-2.5 py-1.5 rounded-xl bg-black/70 border border-amber-400/40 text-amber-200 text-xs focus:outline-none cursor-pointer">
+              <option value="rank">เรียงตาม: อันดับรวม (ผ่านครบ > ด่าน > ดาว > เวลา)</option>
+              <option value="first_come">เรียงตาม: เวลาที่พิชิตครบก่อน-หลัง (First-Come)</option>
+              <option value="fastest">เรียงตาม: เวลาเล่นเร็วที่สุด (Fastest Time)</option>
+              <option value="group">เรียงตาม: ชื่อกลุ่ม</option>
+              <option value="name">เรียงตาม: ชื่อเล่น (ก-ฮ / A-Z)</option>
+            </select>
           </div>
 
-          <div class="flex items-center gap-2 flex-wrap">
+          <div class="flex items-center gap-2 flex-wrap ml-auto">
+            <button id="btn-load-sample-50" type="button"
+              class="btn-festive px-2.5 py-1.5 rounded-xl bg-purple-900/90 hover:bg-purple-800 text-amber-100 text-xs font-bold border border-purple-400/50 flex items-center gap-1 cursor-pointer shadow"
+              title="เติมข้อมูลจำลอง 50 คนสำหรับทดสอบระบบ">
+              <span>👥</span>
+              <span>ทดสอบ 50 คน</span>
+            </button>
             <button id="btn-export-csv" type="button"
-              class="btn-festive px-3 py-1.5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-bold border border-emerald-400/50 flex items-center gap-1 cursor-pointer">
+              class="btn-festive px-3 py-1.5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-bold border border-emerald-400/50 flex items-center gap-1 cursor-pointer shadow">
               <span>📥</span>
-              <span>ส่งออกไฟล์ CSV (Excel)</span>
+              <span>ส่งออก Excel (CSV)</span>
             </button>
             <button id="btn-reset-competition" type="button"
-              class="btn-festive px-3 py-1.5 rounded-xl bg-red-900/90 hover:bg-red-800 text-rose-200 text-xs font-bold border border-red-500/50 flex items-center gap-1 cursor-pointer"
-              title="ล้างข้อมูลผู้เล่นทั้งหมดเพื่อเริ่มการแข่งขันรอบใหม่">
+              class="btn-festive px-3 py-1.5 rounded-xl bg-red-900 hover:bg-red-800 text-rose-200 text-xs font-bold border border-red-500/50 flex items-center gap-1 cursor-pointer shadow"
+              title="ล้างข้อมูลผู้เล่นทั้งหมดเพื่อเริ่มการแข่งขันรอบใหม่ (กลายเป็น 0 คน)">
               <span>🗑️</span>
               <span>ล้างกระดานเริ่มแข่งใหม่</span>
             </button>
@@ -779,8 +752,14 @@
           </div>
         </div>
 
-        <!-- ตารางรายชื่อผู้เล่นและระดับด่าน -->
-        <div class="flex-1 overflow-y-auto border border-amber-400/20 rounded-2xl bg-black/40">
+        <!-- ป้ายจำนวนแถวที่แสดง -->
+        <div class="flex items-center justify-between text-[11px] text-amber-200/70 mb-1 px-1">
+          <span id="admin-table-summary">แสดงผล 0 จาก 0 คน</span>
+          <span class="text-amber-400/80">รองรับผู้เล่นพร้อมกันมากกว่า 50 คนแบบเรียลไทม์ ⚡</span>
+        </div>
+
+        <!-- ตารางรายชื่อผู้เล่นและระดับด่าน (Scrollable table with sticky header) -->
+        <div class="flex-1 overflow-y-auto max-h-[52vh] border border-amber-400/30 rounded-2xl bg-black/60 shadow-inner">
           <table class="w-full text-left text-xs text-amber-100">
             <thead class="bg-[#1b050d] text-amber-300 text-[11px] sticky top-0 border-b border-amber-400/30">
               <tr>
@@ -819,6 +798,8 @@
                 <option value="3" selected>3 รางวัล</option>
                 <option value="5">5 รางวัล</option>
                 <option value="10">10 รางวัล</option>
+                <option value="15">15 รางวัล</option>
+                <option value="20">20 รางวัล</option>
               </select>
             </div>
 
@@ -1047,9 +1028,10 @@
     const DatabaseManager = {
       isFirebaseActive: false,
       firebaseDb: null,
+      sample50Players: {"player_01": {"id": "player_01", "name": "ต้น", "contact": "ทีมซานต้า 🎅", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 12, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 190, "completedAll": true, "completedAt": "15/11/2026 12:10:15", "lastActive": "15/11/2026 12:45:30"}, "player_02": {"id": "player_02", "name": "กิ๊ฟท์", "contact": "กลุ่มเรนเดียร์ 1 🦌", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 13, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 204, "completedAll": true, "completedAt": "15/11/2026 12:12:17", "lastActive": "15/11/2026 12:44:31"}, "player_03": {"id": "player_03", "name": "สมชาย", "contact": "กลุ่มเรนเดียร์ 2 🦌", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 14, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 218, "completedAll": true, "completedAt": "15/11/2026 12:14:19", "lastActive": "15/11/2026 12:43:32"}, "player_04": {"id": "player_04", "name": "มายด์", "contact": "ทีมเอลฟ์หิมะ 🧝", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 15, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 232, "completedAll": true, "completedAt": "15/11/2026 12:16:21", "lastActive": "15/11/2026 12:42:33"}, "player_05": {"id": "player_05", "name": "เอกชัย", "contact": "บ้านขนปังขิง 🍪", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 12, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 246, "completedAll": true, "completedAt": "15/11/2026 12:18:23", "lastActive": "15/11/2026 12:41:34"}, "player_06": {"id": "player_06", "name": "ป๊อป", "contact": "ดาวเบธเลเฮม ⭐", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 13, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 260, "completedAll": true, "completedAt": "15/11/2026 12:20:25", "lastActive": "15/11/2026 12:40:35"}, "player_07": {"id": "player_07", "name": "แบงค์", "contact": "ทีม Marketing 📈", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 14, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 274, "completedAll": true, "completedAt": "15/11/2026 12:22:27", "lastActive": "15/11/2026 12:39:36"}, "player_08": {"id": "player_08", "name": "ตาล", "contact": "ทีม IT Support 💻", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 15, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 288, "completedAll": true, "completedAt": "15/11/2026 12:24:29", "lastActive": "15/11/2026 12:38:37"}, "player_09": {"id": "player_09", "name": "พลอย", "contact": "ทีม HR & Admin 📋", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 12, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 302, "completedAll": true, "completedAt": "15/11/2026 12:26:31", "lastActive": "15/11/2026 12:37:38"}, "player_10": {"id": "player_10", "name": "เมย์", "contact": "ทีม Sales 💼", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 13, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 316, "completedAll": true, "completedAt": "15/11/2026 12:28:33", "lastActive": "15/11/2026 12:36:39"}, "player_11": {"id": "player_11", "name": "โอม", "contact": "ทีมซานต้า 🎅", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 14, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 330, "completedAll": true, "completedAt": "15/11/2026 12:30:35", "lastActive": "15/11/2026 12:35:40"}, "player_12": {"id": "player_12", "name": "บอส", "contact": "กลุ่มเรนเดียร์ 1 🦌", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 15, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 344, "completedAll": true, "completedAt": "15/11/2026 12:32:37", "lastActive": "15/11/2026 12:34:41"}, "player_13": {"id": "player_13", "name": "เจน", "contact": "กลุ่มเรนเดียร์ 2 🦌", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 12, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 358, "completedAll": true, "completedAt": "15/11/2026 12:34:39", "lastActive": "15/11/2026 12:33:42"}, "player_14": {"id": "player_14", "name": "นิว", "contact": "ทีมเอลฟ์หิมะ 🧝", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 13, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 372, "completedAll": true, "completedAt": "15/11/2026 12:36:41", "lastActive": "15/11/2026 12:32:43"}, "player_15": {"id": "player_15", "name": "อาร์ม", "contact": "บ้านขนมปังขิง 🍪", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 14, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 386, "completedAll": true, "completedAt": "15/11/2026 12:38:43", "lastActive": "15/11/2026 12:31:44"}, "player_16": {"id": "player_16", "name": "ทราย", "contact": "ดาวเบธเลเฮม ⭐", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 15, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 400, "completedAll": true, "completedAt": "15/11/2026 12:40:45", "lastActive": "15/11/2026 12:30:45"}, "player_17": {"id": "player_17", "name": "มุก", "contact": "ทีม Marketing 📈", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 12, "starsDetail": [3, 3, 3, 2, 3], "totalTimeSpent": 414, "completedAll": true, "completedAt": "15/11/2026 12:42:47", "lastActive": "15/11/2026 12:29:46"}, "player_18": {"id": "player_18", "name": "นนท์", "contact": "ทีม IT Support 💻", "currentStage": 5, "stagesCompleted": [1, 2, 3, 4, 5], "totalStars": 13, "starsDetail": [3, 3, 3, 3, 2], "totalTimeSpent": 428, "completedAll": true, "completedAt": "15/11/2026 12:44:49", "lastActive": "15/11/2026 12:28:47"}, "player_19": {"id": "player_19", "name": "พีท", "contact": "ทีม HR & Admin 📋", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 7, "starsDetail": [3, 2, 2, 0, 0], "totalTimeSpent": 320, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:27:48"}, "player_20": {"id": "player_20", "name": "แพรว", "contact": "ทีม Sales 💼", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 8, "starsDetail": [3, 3, 2, 0, 0], "totalTimeSpent": 330, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:26:49"}, "player_21": {"id": "player_21", "name": "กอล์ฟ", "contact": "ทีมซานต้า 🎅", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 9, "starsDetail": [3, 2, 2, 0, 0], "totalTimeSpent": 340, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:45:50"}, "player_22": {"id": "player_22", "name": "แนน", "contact": "กลุ่มเรนเดียร์ 1 🦌", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 7, "starsDetail": [3, 3, 2, 0, 0], "totalTimeSpent": 350, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:44:51"}, "player_23": {"id": "player_23", "name": "บิว", "contact": "กลุ่มเรนเดียร์ 2 🦌", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 8, "starsDetail": [3, 2, 2, 0, 0], "totalTimeSpent": 360, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:43:52"}, "player_24": {"id": "player_24", "name": "จุ๊บ", "contact": "ทีมเอลฟ์หิมะ 🧝", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 9, "starsDetail": [3, 3, 2, 0, 0], "totalTimeSpent": 370, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:42:53"}, "player_25": {"id": "player_25", "name": "กานต์", "contact": "บ้านขนมปังขิง 🍪", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 7, "starsDetail": [3, 2, 2, 0, 0], "totalTimeSpent": 380, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:41:54"}, "player_26": {"id": "player_26", "name": "ฟลุ๊ค", "contact": "ดาวเบธเลเฮม ⭐", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 8, "starsDetail": [3, 3, 2, 0, 0], "totalTimeSpent": 390, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:40:30"}, "player_27": {"id": "player_27", "name": "โบว์", "contact": "ทีม Marketing 📈", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 9, "starsDetail": [3, 2, 2, 0, 0], "totalTimeSpent": 400, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:39:31"}, "player_28": {"id": "player_28", "name": "นัท", "contact": "ทีม IT Support 💻", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 7, "starsDetail": [3, 3, 2, 0, 0], "totalTimeSpent": 410, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:38:32"}, "player_29": {"id": "player_29", "name": "แตงโม", "contact": "ทีม HR & Admin 📋", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 8, "starsDetail": [3, 2, 2, 0, 0], "totalTimeSpent": 420, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:37:33"}, "player_30": {"id": "player_30", "name": "เบนซ์", "contact": "ทีม Sales 💼", "currentStage": 4, "stagesCompleted": [1, 2, 3], "totalStars": 9, "starsDetail": [3, 3, 2, 0, 0], "totalTimeSpent": 430, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:36:34"}, "player_31": {"id": "player_31", "name": "วิว", "contact": "ทีมซานต้า 🎅", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 5, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 335, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:35:35"}, "player_32": {"id": "player_32", "name": "ตั้ม", "contact": "กลุ่มเรนเดียร์ 1 🦌", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 6, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 343, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:34:36"}, "player_33": {"id": "player_33", "name": "ฟ้า", "contact": "กลุ่มเรนเดียร์ 2 🦌", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 5, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 351, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:33:37"}, "player_34": {"id": "player_34", "name": "ปอนด์", "contact": "ทีมเอลฟ์หิมะ 🧝", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 6, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 359, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:32:38"}, "player_35": {"id": "player_35", "name": "ออม", "contact": "บ้านขนมปังขิง 🍪", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 5, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 367, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:31:39"}, "player_36": {"id": "player_36", "name": "มิ้นท์", "contact": "ดาวเบธเลเฮม ⭐", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 6, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 375, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:30:40"}, "player_37": {"id": "player_37", "name": "เต้", "contact": "ทีม Marketing 📈", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 5, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 383, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:29:41"}, "player_38": {"id": "player_38", "name": "แอน", "contact": "ทีม IT Support 💻", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 6, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 391, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:28:42"}, "player_39": {"id": "player_39", "name": "โบ๊ท", "contact": "ทีม HR & Admin 📋", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 5, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 399, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:27:43"}, "player_40": {"id": "player_40", "name": "ดาว", "contact": "ทีม Sales 💼", "currentStage": 3, "stagesCompleted": [1, 2], "totalStars": 6, "starsDetail": [3, 2, 0, 0, 0], "totalTimeSpent": 407, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:26:44"}, "player_41": {"id": "player_41", "name": "ฟิล์ม", "contact": "ทีมซานต้า 🎅", "currentStage": 2, "stagesCompleted": [1], "totalStars": 3, "starsDetail": [3, 0, 0, 0, 0], "totalTimeSpent": 290, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:45:45"}, "player_42": {"id": "player_42", "name": "หนิง", "contact": "กลุ่มเรนเดียร์ 1 🦌", "currentStage": 2, "stagesCompleted": [1], "totalStars": 3, "starsDetail": [3, 0, 0, 0, 0], "totalTimeSpent": 296, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:44:46"}, "player_43": {"id": "player_43", "name": "แดน", "contact": "กลุ่มเรนเดียร์ 2 🦌", "currentStage": 2, "stagesCompleted": [1], "totalStars": 3, "starsDetail": [3, 0, 0, 0, 0], "totalTimeSpent": 302, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:43:47"}, "player_44": {"id": "player_44", "name": "ลูกเกด", "contact": "ทีมเอลฟ์หิมะ 🧝", "currentStage": 2, "stagesCompleted": [1], "totalStars": 3, "starsDetail": [3, 0, 0, 0, 0], "totalTimeSpent": 308, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:42:48"}, "player_45": {"id": "player_45", "name": "ปาล์ม", "contact": "บ้านขนมปังขิง 🍪", "currentStage": 2, "stagesCompleted": [1], "totalStars": 3, "starsDetail": [3, 0, 0, 0, 0], "totalTimeSpent": 314, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:41:49"}, "player_46": {"id": "player_46", "name": "ปุย", "contact": "ดาวเบธเลเฮม ⭐", "currentStage": 2, "stagesCompleted": [1], "totalStars": 3, "starsDetail": [3, 0, 0, 0, 0], "totalTimeSpent": 320, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:40:50"}, "player_47": {"id": "player_47", "name": "อาร์ท", "contact": "ทีม Marketing 📈", "currentStage": 1, "stagesCompleted": [], "totalStars": 0, "starsDetail": [0, 0, 0, 0, 0], "totalTimeSpent": 209, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:39:51"}, "player_48": {"id": "player_48", "name": "น้ำ", "contact": "ทีม IT Support 💻", "currentStage": 1, "stagesCompleted": [], "totalStars": 0, "starsDetail": [0, 0, 0, 0, 0], "totalTimeSpent": 213, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:38:52"}, "player_49": {"id": "player_49", "name": "แชมป์", "contact": "ทีม HR & Admin 📋", "currentStage": 1, "stagesCompleted": [], "totalStars": 0, "starsDetail": [0, 0, 0, 0, 0], "totalTimeSpent": 217, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:37:53"}, "player_50": {"id": "player_50", "name": "จอย", "contact": "ทีม Sales 💼", "currentStage": 1, "stagesCompleted": [], "totalStars": 0, "starsDetail": [0, 0, 0, 0, 0], "totalTimeSpent": 221, "completedAll": false, "completedAt": null, "lastActive": "15/11/2026 12:36:54"}},
       currentPlayer: {
         id: '',
-        name: 'ผู้เล่นนิรนาม',
+        name: '',
         contact: '',
         currentStage: 1,
         stagesCompleted: [],
@@ -1062,98 +1044,40 @@
       },
       allPlayers: {},
 
-      // ผู้เล่นจำลองสำหรับการทดสอบ Dashboard
-      samplePlayers: {
-        'sample_1': {
-          id: 'sample_1',
-          name: 'กิ๊ฟท์',
-          contact: 'ทีมซานต้า',
-          currentStage: 5,
-          stagesCompleted: [1, 2, 3, 4, 5],
-          totalStars: 15,
-          starsDetail: [3, 3, 3, 3, 3],
-          totalTimeSpent: 215,
-          completedAll: true,
-          completedAt: '15/11/2026 12:15:30',
-          lastActive: '15/11/2026 12:15:30'
-        },
-        'sample_2': {
-          id: 'sample_2',
-          name: 'สมชาย',
-          contact: 'กลุ่มเรนเดียร์ 1',
-          currentStage: 5,
-          stagesCompleted: [1, 2, 3, 4, 5],
-          totalStars: 14,
-          starsDetail: [3, 3, 3, 2, 3],
-          totalTimeSpent: 248,
-          completedAll: true,
-          completedAt: '15/11/2026 12:28:10',
-          lastActive: '15/11/2026 12:28:10'
-        },
-        'sample_3': {
-          id: 'sample_3',
-          name: 'พี่ป๊อป',
-          contact: 'ทีมเอลฟ์หิมะ',
-          currentStage: 5,
-          stagesCompleted: [1, 2, 3, 4, 5],
-          totalStars: 13,
-          starsDetail: [3, 2, 3, 3, 2],
-          totalTimeSpent: 290,
-          completedAll: true,
-          completedAt: '15/11/2026 12:35:45',
-          lastActive: '15/11/2026 12:35:45'
-        },
-        'sample_4': {
-          id: 'sample_4',
-          name: 'มายด์',
-          contact: 'บ้านขนมปังขิง',
-          currentStage: 4,
-          stagesCompleted: [1, 2, 3],
-          totalStars: 8,
-          starsDetail: [3, 3, 2, 0, 0],
-          totalTimeSpent: 160,
-          completedAll: false,
-          completedAt: null,
-          lastActive: '15/11/2026 12:40:00'
-        },
-        'sample_5': {
-          id: 'sample_5',
-          name: 'เอกชัย',
-          contact: 'ดาวเบธเลเฮม',
-          currentStage: 2,
-          stagesCompleted: [1],
-          totalStars: 3,
-          starsDetail: [3, 0, 0, 0, 0],
-          totalTimeSpent: 85,
-          completedAll: false,
-          completedAt: null,
-          lastActive: '15/11/2026 12:44:12'
-        }
-      },
-
       init() {
-        // 1. โหลดหรือสร้างรหัสผู้เล่นประจำเครื่อง
+        // 1. รหัสประจำเครื่องของผู้เล่น
         let pid = localStorage.getItem('xmas_player_id');
         if (!pid) {
-          pid = 'p_' + Math.random().toString(36).substring(2, 9) + '_' + Date.now().toString(36);
+          pid = 'player_' + Math.random().toString(36).substring(2, 8) + '_' + Date.now().toString(36);
           localStorage.setItem('xmas_player_id', pid);
         }
         this.currentPlayer.id = pid;
 
-        // 2. โหลดชื่อและข้อมูลติดต่อเดิม
+        // 2. โหลดชื่อเล่นและชื่อกลุ่ม (ถ้าเคยบันทึกไว้)
         const pName = localStorage.getItem('xmas_player_name');
         const pContact = localStorage.getItem('xmas_player_contact');
-        if (pName) this.currentPlayer.name = pName;
-        if (pContact) this.currentPlayer.contact = pContact;
-
-        // 3. โหลดประวัติความก้าวหน้า
-        const savedStars = localStorage.getItem('xmas_diff_stars');
-        if (savedStars) {
-          this.currentPlayer.starsDetail = JSON.parse(savedStars);
-          this.currentPlayer.totalStars = this.currentPlayer.starsDetail.reduce((a, b) => a + b, 0);
+        if (pName && pName.trim() && pName !== 'ผู้เล่นนิรนาม') {
+          this.currentPlayer.name = pName.trim();
+          this.currentPlayer.contact = pContact ? pContact.trim() : '';
+        } else {
+          this.currentPlayer.name = '';
+          this.currentPlayer.contact = '';
         }
 
-        // 4. โหลดผู้เล่นทั้งหมดจาก LocalStorage (ค่าเริ่มต้นเป็นว่างเปล่า ไม่โหลดตัวอย่างอัตโนมัติ)
+        // 3. โหลดสถิติดาวและเวลาเดิม
+        const savedStars = localStorage.getItem('xmas_diff_stars');
+        if (savedStars) {
+          try {
+            this.currentPlayer.starsDetail = JSON.parse(savedStars);
+            this.currentPlayer.totalStars = this.currentPlayer.starsDetail.reduce((a, b) => a + b, 0);
+          } catch (e) {}
+        }
+        const savedTime = localStorage.getItem('xmas_player_time');
+        if (savedTime) {
+          this.currentPlayer.totalTimeSpent = parseInt(savedTime, 10) || 0;
+        }
+
+        // 4. โหลดข้อมูลผู้เล่นทั้งหมดจาก LocalStorage
         try {
           const localPlayers = localStorage.getItem('xmas_all_players');
           this.allPlayers = localPlayers ? JSON.parse(localPlayers) : {};
@@ -1161,15 +1085,32 @@
           this.allPlayers = {};
         }
 
-        // ใส่ตัวเราเองเข้าไปใน All Players เฉพาะเมื่อได้ลงทะเบียนชื่อแล้วเท่านั้น
-        if (this.currentPlayer.name && this.currentPlayer.name !== 'ผู้เล่นนิรนาม') {
+        // กรองข้อมูลเก่าที่เป็น 'ผู้เล่นนิรนาม' หรือไม่มีชื่อจริงออกโดยอัตโนมัติ
+        let hasInvalid = false;
+        Object.keys(this.allPlayers).forEach(k => {
+          const p = this.allPlayers[k];
+          if (!p || !p.name || p.name === 'ผู้เล่นนิรนาม' || p.name.trim() === '') {
+            delete this.allPlayers[k];
+            hasInvalid = true;
+          }
+        });
+        if (hasInvalid) {
+          this.saveLocalPlayers();
+        }
+
+        // 5. หากผู้เล่นลงทะเบียนชื่อแล้ว ให้บันทึกสถานะล่าสุด
+        if (this.isRegistered()) {
           this.updateCurrentPlayerData();
         } else {
           this.renderAllDashboards();
         }
 
-        // 5. พยายามเชื่อมต่อ Firebase หากมีบันทึก Config ไว้
+        // 6. เชื่อมต่อ Firebase หากมีบันทึก Config ไว้
         this.initFirebaseIfConfigured();
+      },
+
+      isRegistered() {
+        return !!(this.currentPlayer.name && this.currentPlayer.name.trim() && this.currentPlayer.name !== 'ผู้เล่นนิรนาม');
       },
 
       initFirebaseIfConfigured() {
@@ -1180,7 +1121,16 @@
         }
 
         try {
-          const config = JSON.parse(configStr);
+          // รองรับทั้ง JSON มาตรฐาน และการคัดลอกแบบ JS Object: const firebaseConfig = { ... }
+          let cleanStr = configStr.trim();
+          if (cleanStr.includes('apiKey')) {
+            const startIdx = cleanStr.indexOf('{');
+            const endIdx = cleanStr.lastIndexOf('}');
+            if (startIdx !== -1 && endIdx !== -1) {
+              cleanStr = cleanStr.substring(startIdx, endIdx + 1);
+            }
+          }
+          const config = JSON.parse(cleanStr);
           if (config && config.apiKey && (config.databaseURL || config.projectId)) {
             if (!firebase.apps.length) {
               firebase.initializeApp(config);
@@ -1189,17 +1139,17 @@
             this.isFirebaseActive = true;
             this.updateDbStatusBadge(true);
 
-            // ฟังการเปลี่ยนแปลงข้อมูลผู้เล่นทั้งหมดจาก Firebase แบบ Realtime!
+            // ฟังการเปลี่ยนแปลงข้อมูลผู้เล่น 50+ คนจาก Firebase แบบ Realtime!
             this.firebaseDb.ref('xmas_players').on('value', (snapshot) => {
               const val = snapshot.val();
-              if (val) {
-                this.allPlayers = val;
-                this.renderAllDashboards();
-              }
+              this.allPlayers = val || {};
+              this.renderAllDashboards();
             });
 
             // ซิงค์ข้อมูลตัวเราขึ้น Firebase ทันที
-            this.syncCurrentPlayerToFirebase();
+            if (this.isRegistered()) {
+              this.syncCurrentPlayerToFirebase();
+            }
           } else {
             this.updateDbStatusBadge(false);
           }
@@ -1212,12 +1162,13 @@
       updateDbStatusBadge(isOnline) {
         const badge = document.getElementById('db-status-badge');
         const text = document.getElementById('db-status-text');
+        if (!badge || !text) return;
         if (isOnline) {
-          badge.className = 'px-3 py-1 rounded-full text-xs font-bold border flex items-center gap-1.5 bg-emerald-950/80 text-emerald-300 border-emerald-400/40 shadow-sm';
-          text.textContent = '🟢 เชื่อมต่อ Cloud Database สำเร็จ (Realtime)';
+          badge.className = 'px-3 py-1 rounded-full text-xs font-bold border flex items-center gap-1.5 bg-emerald-950/90 text-emerald-300 border-emerald-400/50 shadow-md';
+          text.textContent = '🟢 เชื่อมต่อ Cloud Database สำเร็จ (Realtime Sync 50+ เครื่อง)';
         } else {
           badge.className = 'px-3 py-1 rounded-full text-xs font-bold border flex items-center gap-1.5 bg-amber-950/80 text-amber-300 border-amber-400/40';
-          text.textContent = '🟠 โหมดจำลอง / Local Storage (ออฟไลน์)';
+          text.textContent = '🟠 โหมดทดสอบในเครื่องนี้ (Local Mode)';
         }
       },
 
@@ -1228,7 +1179,7 @@
       },
 
       syncCurrentPlayerToFirebase() {
-        if (!this.isFirebaseActive || !this.firebaseDb) return;
+        if (!this.isFirebaseActive || !this.firebaseDb || !this.isRegistered()) return;
         try {
           this.firebaseDb.ref('xmas_players/' + this.currentPlayer.id).set(this.currentPlayer);
         } catch (e) {
@@ -1237,6 +1188,12 @@
       },
 
       updateCurrentPlayerData() {
+        // ห้ามบันทึกผู้เล่นนิรนามลงระบบเด็ดขาด!
+        if (!this.isRegistered()) {
+          this.renderAllDashboards();
+          return;
+        }
+
         this.currentPlayer.lastActive = new Date().toLocaleString('th-TH');
         this.allPlayers[this.currentPlayer.id] = { ...this.currentPlayer };
         this.saveLocalPlayers();
@@ -1245,18 +1202,42 @@
       },
 
       setPlayerProfile(name, contact) {
-        this.currentPlayer.name = name.trim();
-        this.currentPlayer.contact = contact.trim();
-        localStorage.setItem('xmas_player_name', this.currentPlayer.name);
-        localStorage.setItem('xmas_player_contact', this.currentPlayer.contact);
+        const cleanName = name.trim();
+        const cleanContact = contact.trim();
+        if (!cleanName) return;
 
-        document.getElementById('nav-player-name').textContent = this.currentPlayer.name + (this.currentPlayer.contact ? ' (' + this.currentPlayer.contact + ')' : '');
+        this.currentPlayer.name = cleanName;
+        this.currentPlayer.contact = cleanContact;
+        localStorage.setItem('xmas_player_name', cleanName);
+        localStorage.setItem('xmas_player_contact', cleanContact);
+
+        const navName = document.getElementById('nav-player-name');
+        if (navName) {
+          navName.textContent = cleanName + (cleanContact ? ' (' + cleanContact + ')' : '');
+        }
+
         this.updateCurrentPlayerData();
+      },
+
+      addPlayTime(seconds = 1) {
+        if (!this.isRegistered()) return;
+        this.currentPlayer.totalTimeSpent = (this.currentPlayer.totalTimeSpent || 0) + seconds;
+        localStorage.setItem('xmas_player_time', String(this.currentPlayer.totalTimeSpent));
+        if (this.allPlayers[this.currentPlayer.id]) {
+          this.allPlayers[this.currentPlayer.id].totalTimeSpent = this.currentPlayer.totalTimeSpent;
+        }
+
+        // ซิงค์สถิติเวลาทุกๆ 5 วินาที เพื่อความเรียลไทม์และประหยัดการเขียนข้อมูล
+        if (this.currentPlayer.totalTimeSpent % 5 === 0) {
+          this.updateCurrentPlayerData();
+        }
       },
 
       updateCurrentStage(stageIndex) {
         this.currentPlayer.currentStage = stageIndex + 1;
-        this.updateCurrentPlayerData();
+        if (this.isRegistered()) {
+          this.updateCurrentPlayerData();
+        }
       },
 
       updateStageCleared(stageIndex, starsEarned, timeRemaining) {
@@ -1267,16 +1248,12 @@
         }
 
         this.currentPlayer.starsDetail[stageIndex] = Math.max(
-          this.currentPlayer.starsDetail[stageIndex],
+          this.currentPlayer.starsDetail[stageIndex] || 0,
           starsEarned
         );
         this.currentPlayer.totalStars = this.currentPlayer.starsDetail.reduce((a, b) => a + b, 0);
 
-        // คำนวณเวลาที่ใช้ (90 - timeRemaining)
-        const spent = Math.max(10, 90 - timeRemaining);
-        this.currentPlayer.totalTimeSpent += spent;
-
-        // ตรวจสอบว่าผ่านครบ 5 ด่านหรือไม่
+        // ตรวจสอบว่าพิชิตครบทั้ง 5 ด่านหรือไม่
         if (this.currentPlayer.stagesCompleted.length >= 5) {
           this.currentPlayer.completedAll = true;
           if (!this.currentPlayer.completedAt) {
@@ -1284,10 +1261,13 @@
           }
         }
 
-        this.updateCurrentPlayerData();
+        if (this.isRegistered()) {
+          this.updateCurrentPlayerData();
+        }
       },
 
       renderAllDashboards() {
+        this.updateGroupDropdown();
         this.renderLeaderboard();
         this.renderAdminOverview();
         this.renderAdminPlayerTable();
@@ -1295,42 +1275,213 @@
       },
 
       updateHeaderBadge() {
-        const playersList = Object.values(this.allPlayers);
-        const completedCount = playersList.filter(p => p.completedAll).length;
-        document.getElementById('badge-completed-count').textContent = completedCount;
+        const badge = document.getElementById('badge-completed-count');
+        if (!badge) return;
+        const completedCount = Object.values(this.allPlayers).filter(p => p.completedAll).length;
+        badge.textContent = completedCount;
       },
 
-      // ฟังก์ชันจัดเรียงผู้เล่น
-      getSortedPlayers(filterCompletedOnly = false) {
-        let list = Object.values(this.allPlayers);
-        if (filterCompletedOnly) {
-          list = list.filter(p => p.completedAll);
-        }
-        return list.sort((a, b) => {
-          // 1. เรียงคนที่ผ่านครบ 5 ด่านก่อน
-          if (a.completedAll !== b.completedAll) {
-            return a.completedAll ? -1 : 1;
+      updateGroupDropdown() {
+        const selectGroup = document.getElementById('select-admin-group');
+        if (!selectGroup) return;
+
+        const currentVal = selectGroup.value;
+        const groups = new Set();
+        Object.values(this.allPlayers).forEach(p => {
+          if (p.contact && p.contact.trim() && p.contact !== 'ไม่มีกลุ่ม') {
+            groups.add(p.contact.trim());
           }
-          // 2. เรียงตามจำนวนด่านที่ผ่าน
-          const aStages = a.stagesCompleted ? a.stagesCompleted.length : 0;
-          const bStages = b.stagesCompleted ? b.stagesCompleted.length : 0;
-          if (aStages !== bStages) return bStages - aStages;
+        });
 
-          // 3. เรียงตามดาวสะสม
-          if (a.totalStars !== b.totalStars) return b.totalStars - a.totalStars;
+        selectGroup.innerHTML = '<option value="all">ทุกกลุ่ม / ทุกทีม (' + Object.keys(this.allPlayers).length + ' คน)</option>';
+        Array.from(groups).sort().forEach(g => {
+          const count = Object.values(this.allPlayers).filter(p => p.contact === g).length;
+          const opt = document.createElement('option');
+          opt.value = g;
+          opt.textContent = g + ' (' + count + ' คน)';
+          selectGroup.appendChild(opt);
+        });
 
-          // 4. เรียงตามเวลาที่ใช้ (น้อยกว่าอยู่หน้า)
-          return (a.totalTimeSpent || 9999) - (b.totalTimeSpent || 9999);
+        if (Array.from(groups).includes(currentVal)) {
+          selectGroup.value = currentVal;
+        }
+      },
+
+      getSortedPlayers() {
+        const filterStatus = (document.getElementById('select-admin-filter') || {}).value || 'all';
+        const filterGroup = (document.getElementById('select-admin-group') || {}).value || 'all';
+        const sortBy = (document.getElementById('select-admin-sort') || {}).value || 'rank';
+        const searchVal = ((document.getElementById('input-admin-search') || {}).value || '').trim().toLowerCase();
+
+        let list = Object.values(this.allPlayers);
+
+        // 1. กรองสถานะ
+        if (filterStatus === 'completed') {
+          list = list.filter(p => p.completedAll);
+        } else if (filterStatus === 'playing') {
+          list = list.filter(p => !p.completedAll);
+        }
+
+        // 2. กรองกลุ่ม
+        if (filterGroup !== 'all') {
+          list = list.filter(p => p.contact === filterGroup);
+        }
+
+        // 3. กรองคำค้นหา
+        if (searchVal) {
+          list = list.filter(p =>
+            (p.name && p.name.toLowerCase().includes(searchVal)) ||
+            (p.contact && p.contact.toLowerCase().includes(searchVal))
+          );
+        }
+
+        // 4. เรียงลำดับ
+        return list.sort((a, b) => {
+          if (sortBy === 'first_come') {
+            // จบก่อนอยู่หน้า
+            if (a.completedAll && b.completedAll) {
+              return (a.completedAt || '').localeCompare(b.completedAt || '');
+            }
+            return a.completedAll ? -1 : (b.completedAll ? 1 : 0);
+          } else if (sortBy === 'fastest') {
+            return (a.totalTimeSpent || 999999) - (b.totalTimeSpent || 999999);
+          } else if (sortBy === 'group') {
+            return (a.contact || '').localeCompare(b.contact || '');
+          } else if (sortBy === 'name') {
+            return (a.name || '').localeCompare(b.name || '');
+          } else {
+            // ค่าเริ่มต้น (Rank): จบครบ 5 ด่านก่อน > จำนวนด่านที่ผ่าน > ดาวสะสม > เวลาน้อยกว่า
+            if (a.completedAll !== b.completedAll) {
+              return a.completedAll ? -1 : 1;
+            }
+            const aStages = a.stagesCompleted ? a.stagesCompleted.length : 0;
+            const bStages = b.stagesCompleted ? b.stagesCompleted.length : 0;
+            if (aStages !== bStages) return bStages - aStages;
+            if (a.totalStars !== b.totalStars) return b.totalStars - a.totalStars;
+            return (a.totalTimeSpent || 999999) - (b.totalTimeSpent || 999999);
+          }
         });
       },
 
-      // วาดตารางใน Leaderboard สาธารณะ
+      renderAdminOverview() {
+        const players = Object.values(this.allPlayers);
+        const total = players.length;
+        const completed = players.filter(p => p.completedAll);
+        const playing = total - completed.length;
+
+        const elTotal = document.getElementById('stat-total-players');
+        const elCompleted = document.getElementById('stat-completed-players');
+        const elPlaying = document.getElementById('stat-playing-players');
+        const elFastest = document.getElementById('stat-fastest-time');
+        const elRafflePool = document.getElementById('raffle-pool-count');
+
+        if (elTotal) elTotal.textContent = `${total} คน`;
+        if (elCompleted) elCompleted.textContent = `${completed.length} คน`;
+        if (elPlaying) elPlaying.textContent = `${playing} คน`;
+
+        if (completed.length > 0) {
+          const fastest = [...completed].sort((a, b) => (a.totalTimeSpent || 999999) - (b.totalTimeSpent || 999999))[0];
+          const mins = Math.floor((fastest.totalTimeSpent || 0) / 60);
+          const secs = (fastest.totalTimeSpent || 0) % 60;
+          const timeText = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')} น.`;
+          if (elFastest) elFastest.textContent = `${timeText} (${fastest.name} - ${fastest.contact || ''})`;
+        } else {
+          if (elFastest) elFastest.textContent = 'ยังไม่มีผู้จบครบ';
+        }
+
+        if (elRafflePool) elRafflePool.textContent = `${completed.length}`;
+      },
+
+      renderAdminPlayerTable() {
+        const tbody = document.getElementById('admin-players-tbody');
+        const summary = document.getElementById('admin-table-summary');
+        if (!tbody) return;
+        tbody.innerHTML = '';
+
+        const players = this.getSortedPlayers();
+        const totalInDb = Object.keys(this.allPlayers).length;
+        if (summary) {
+          summary.textContent = `แสดงผล ${players.length} จากทั้งหมด ${totalInDb} คน`;
+        }
+
+        if (players.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="8" class="text-center py-8 text-amber-200/50">
+            <span class="text-2xl block mb-1">🏁</span>
+            ยังไม่มีข้อมูลผู้เล่นในระบบ หรือไม่พบข้อมูลตามตัวกรอง<br>
+            <span class="text-[11px] text-amber-200/40">(กด "👥 ทดสอบ 50 คน" ด้านบนเพื่อดูตัวอย่างผู้เล่น 50 คนได้ทันที)</span>
+          </td></tr>`;
+          return;
+        }
+
+        players.forEach((p, idx) => {
+          const isCompleted = p.completedAll;
+          const stagesDone = p.stagesCompleted ? p.stagesCompleted.length : 0;
+          const totalSecs = p.totalTimeSpent || 0;
+          const mins = Math.floor(totalSecs / 60);
+          const secs = totalSecs % 60;
+          const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')} น.`;
+
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-amber-950/30 transition-colors border-b border-amber-500/10';
+
+          tr.innerHTML = `
+            <td class="p-2.5 sm:p-3 font-mono font-extrabold text-amber-300 text-center">${idx + 1}</td>
+            <td class="p-2.5 sm:p-3">
+              <div class="font-extrabold text-amber-200 text-xs sm:text-sm">${p.name || 'ไม่ระบุชื่อ'}</div>
+              <div class="text-[11px] text-amber-300 font-semibold mt-0.5">🏷️ ${p.contact || 'ไม่มีกลุ่ม'}</div>
+            </td>
+            <td class="p-2.5 sm:p-3 text-center">
+              <span class="px-2.5 py-0.5 rounded-lg bg-black/60 border border-amber-400/30 text-amber-300 font-bold text-xs">
+                ด่าน ${p.currentStage || 1}/5
+              </span>
+            </td>
+            <td class="p-2.5 sm:p-3 text-center">
+              <div class="inline-flex flex-col items-center">
+                <span class="font-bold text-xs ${isCompleted ? 'text-emerald-400' : 'text-amber-300'}">
+                  ${isCompleted ? '5/5 ด่าน (พิชิตครบ 👑)' : `ผ่าน ${stagesDone}/5 ด่าน`}
+                </span>
+                <div class="w-20 bg-black/60 h-2 rounded-full overflow-hidden border border-amber-400/30 mt-1">
+                  <div class="h-full bg-gradient-to-r ${isCompleted ? 'from-emerald-400 to-teal-300' : 'from-amber-500 to-red-500'}" style="width: ${(stagesDone / 5) * 100}%"></div>
+                </div>
+              </div>
+            </td>
+            <td class="p-2.5 sm:p-3 text-center font-black text-amber-300 text-xs sm:text-sm">${p.totalStars || 0} ⭐</td>
+            <td class="p-2.5 sm:p-3 text-center font-mono font-bold text-amber-200/90 text-xs">${timeStr}</td>
+            <td class="p-2.5 sm:p-3 text-xs">
+              ${p.completedAt ? `<span class="text-emerald-300 font-bold block">${p.completedAt}</span>` : '<span class="text-stone-500">กำลังเล่นอยู่ ⏳</span>'}
+            </td>
+            <td class="p-2.5 sm:p-3 text-center">
+              ${
+                isCompleted
+                  ? '<span class="px-2.5 py-1 rounded-full bg-emerald-950/90 text-emerald-300 font-extrabold border border-emerald-400/60 text-[10px] shadow">👑 สำเร็จครบ 5 ด่าน</span>'
+                  : `<span class="px-2.5 py-1 rounded-full bg-indigo-950/80 text-indigo-300 font-medium border border-indigo-400/30 text-[10px]">ลุยด่าน ${p.currentStage || 1}</span>`
+              }
+            </td>
+          `;
+          tbody.appendChild(tr);
+        });
+      },
+
       renderLeaderboard(tab = 'hall', searchQuery = '') {
         const container = document.getElementById('leaderboard-list');
         if (!container) return;
         container.innerHTML = '';
 
-        let players = this.getSortedPlayers(tab === 'hall');
+        let players = Object.values(this.allPlayers);
+        if (tab === 'hall') {
+          players = players.filter(p => p.completedAll);
+        }
+
+        // เรียงลำดับ
+        players.sort((a, b) => {
+          if (a.completedAll !== b.completedAll) return a.completedAll ? -1 : 1;
+          const aStages = a.stagesCompleted ? a.stagesCompleted.length : 0;
+          const bStages = b.stagesCompleted ? b.stagesCompleted.length : 0;
+          if (aStages !== bStages) return bStages - aStages;
+          if (a.totalStars !== b.totalStars) return b.totalStars - a.totalStars;
+          return (a.totalTimeSpent || 999999) - (b.totalTimeSpent || 999999);
+        });
+
         if (searchQuery.trim()) {
           const q = searchQuery.toLowerCase();
           players = players.filter(p =>
@@ -1343,7 +1494,7 @@
           container.innerHTML = `
             <div class="text-center py-8 text-amber-200/50">
               <span class="text-3xl block mb-1">❄️</span>
-              ${tab === 'hall' ? 'ยังไม่มีผู้พิชิตครบ 5 ด่านในขณะนี้ มาเป็นคนแรกกันเลย!' : 'ไม่พบข้อมูลผู้เล่นที่ค้นหา'}
+              ${tab === 'hall' ? 'ยังไม่มีผู้พิชิตครบ 5 ด่านในขณะนี้ มาเป็นคนแรกกันเลย!' : 'ยังไม่มีผู้เล่นในกระดานอันดับ'}
             </div>
           `;
           return;
@@ -1358,208 +1509,43 @@
           const card = document.createElement('div');
           card.className = `p-3 rounded-2xl border flex items-center justify-between gap-3 transition-all ${
             isMe
-              ? 'bg-gradient-to-r from-amber-950/80 to-red-950/80 border-amber-300 ring-1 ring-amber-300 shadow-md'
-              : 'bg-black/40 border-amber-500/20 hover:bg-black/60'
+              ? 'bg-gradient-to-r from-amber-950/90 to-red-950/90 border-amber-300 ring-2 ring-amber-300 shadow-lg'
+              : 'bg-black/50 border-amber-500/20 hover:bg-black/70'
           }`;
 
           const stagesDone = p.stagesCompleted ? p.stagesCompleted.length : 0;
-          const mins = Math.floor((p.totalTimeSpent || 0) / 60);
-          const secs = (p.totalTimeSpent || 0) % 60;
-          const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+          const totalSecs = p.totalTimeSpent || 0;
+          const mins = Math.floor(totalSecs / 60);
+          const secs = totalSecs % 60;
+          const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')} น.`;
 
           card.innerHTML = `
             <div class="flex items-center gap-3">
-              <span class="font-extrabold text-base sm:text-lg text-amber-300 w-7 text-center shrink-0">${rankBadge}</span>
+              <span class="font-extrabold text-base sm:text-lg text-amber-300 w-8 text-center shrink-0">${rankBadge}</span>
               <div>
-                <div class="flex items-center gap-1.5 flex-wrap">
-                  <span class="font-bold text-amber-200 text-xs sm:text-sm">${p.name || 'ผู้เล่นนิรนาม'}</span>
-                  ${isMe ? '<span class="px-1.5 py-0.2 rounded-full bg-amber-400 text-slate-950 text-[9px] font-extrabold">คุณ</span>' : ''}
-                  ${isCompleted ? '<span class="px-1.5 py-0.2 rounded-full bg-emerald-900 text-emerald-300 text-[10px] font-bold border border-emerald-500/40">👑 พิชิตครบ</span>' : ''}
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-extrabold text-amber-200 text-xs sm:text-sm">${p.name || 'ไม่ระบุชื่อ'}</span>
+                  <span class="text-[11px] text-amber-300 font-bold bg-amber-950/60 px-2 py-0.5 rounded-md border border-amber-400/30">🏷️ ${p.contact || 'ไม่มีกลุ่ม'}</span>
+                  ${isMe ? '<span class="px-2 py-0.5 rounded-full bg-amber-400 text-slate-950 text-[10px] font-black">คุณ</span>' : ''}
+                  ${isCompleted ? '<span class="px-2 py-0.5 rounded-full bg-emerald-900 text-emerald-300 text-[10px] font-bold border border-emerald-500/40">👑 พิชิตครบ 5 ด่าน</span>' : ''}
                 </div>
-                <div class="text-[11px] text-amber-100/60 mt-0.5">
-                  ผ่านแล้ว ${stagesDone}/5 ด่าน • เวลา ${timeStr} นาที
-                  ${p.completedAt ? ` • พิชิตเมื่อ: <span class="text-amber-300">${p.completedAt}</span>` : ''}
+                <div class="text-[11px] text-amber-100/70 mt-1">
+                  ผ่าน ${stagesDone}/5 ด่าน • เวลาเล่นรวม ${timeStr}
+                  ${p.completedAt ? ` • พิชิตเมื่อ: <span class="text-amber-300 font-bold">${p.completedAt}</span>` : ''}
                 </div>
               </div>
             </div>
             <div class="text-right shrink-0">
-              <div class="font-bold text-amber-300 text-xs sm:text-sm">${p.totalStars || 0} ⭐</div>
-              <div class="text-[10px] text-amber-200/60">ด่าน ${p.currentStage || 1}</div>
+              <div class="font-black text-amber-300 text-sm sm:text-base">${p.totalStars || 0} ⭐</div>
+              <div class="text-[10px] text-amber-200/70">ด่าน ${p.currentStage || 1}/5</div>
             </div>
           `;
           container.appendChild(card);
         });
       },
 
-      // สรุปสถิติ 4 ใบใน Admin Dashboard
-      renderAdminOverview() {
-        const players = Object.values(this.allPlayers);
-        const total = players.length;
-        const completed = players.filter(p => p.completedAll);
-        const playing = total - completed.length;
-
-        document.getElementById('stat-total-players').textContent = `${total} คน`;
-        document.getElementById('stat-completed-players').textContent = `${completed.length} คน`;
-        document.getElementById('stat-playing-players').textContent = `${playing} คน`;
-
-        // สถิติเร็วที่สุดในบรรดาคนที่ผ่านครบ 5 ด่าน
-        if (completed.length > 0) {
-          const fastest = completed.sort((a, b) => (a.totalTimeSpent || 9999) - (b.totalTimeSpent || 9999))[0];
-          const mins = Math.floor(fastest.totalTimeSpent / 60);
-          const secs = fastest.totalTimeSpent % 60;
-          document.getElementById('stat-fastest-time').textContent = `${mins}m ${secs}s (${fastest.name})`;
-        } else {
-          document.getElementById('stat-fastest-time').textContent = 'ยังไม่มีผู้จบครบ';
-        }
-
-        // อัปเดตตัวเลขในโถสุ่มรางวัล
-        document.getElementById('raffle-pool-count').textContent = completed.length;
-      },
-
-      // วาดตารางผู้เล่นใน Admin Dashboard
-      renderAdminPlayerTable() {
-        const tbody = document.getElementById('admin-players-tbody');
-        if (!tbody) return;
-        tbody.innerHTML = '';
-
-        const filterVal = document.getElementById('select-admin-filter').value;
-        const searchVal = document.getElementById('input-admin-search').value.toLowerCase();
-
-        let players = this.getSortedPlayers(false);
-
-        if (filterVal === 'completed') {
-          players = players.filter(p => p.completedAll);
-        } else if (filterVal === 'playing') {
-          players = players.filter(p => !p.completedAll);
-        }
-
-        if (searchVal.trim()) {
-          players = players.filter(p =>
-            (p.name && p.name.toLowerCase().includes(searchVal)) ||
-            (p.contact && p.contact.toLowerCase().includes(searchVal))
-          );
-        }
-
-        if (players.length === 0) {
-          tbody.innerHTML = `<tr><td colspan="8" class="text-center py-6 text-amber-200/50">ไม่พบข้อมูลผู้เล่นตามเงื่อนไข</td></tr>`;
-          return;
-        }
-
-        players.forEach((p, idx) => {
-          const isCompleted = p.completedAll;
-          const stagesCount = p.stagesCompleted ? p.stagesCompleted.length : 0;
-          const mins = Math.floor((p.totalTimeSpent || 0) / 60);
-          const secs = (p.totalTimeSpent || 0) % 60;
-          const timeStr = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-
-          const tr = document.createElement('tr');
-          tr.className = 'hover:bg-amber-950/20 transition-colors';
-
-          tr.innerHTML = `
-            <td class="p-2.5 sm:p-3 font-mono font-bold text-amber-300">${idx + 1}</td>
-            <td class="p-2.5 sm:p-3">
-              <div class="font-bold text-amber-200">${p.name || 'ผู้เล่นนิรนาม'}</div>
-              <div class="text-[10px] text-amber-300/80 font-medium">กลุ่ม: ${p.contact || 'ไม่มีกลุ่ม'}</div>
-            </td>
-            <td class="p-2.5 sm:p-3">
-              <span class="px-2 py-0.5 rounded-lg bg-black/40 border border-amber-400/20 text-amber-300 font-semibold text-[11px]">
-                ด่าน ${p.currentStage || 1}/5
-              </span>
-            </td>
-            <td class="p-2.5 sm:p-3 text-center">
-              <div class="inline-flex items-center gap-1">
-                <span class="font-bold text-xs ${isCompleted ? 'text-emerald-400' : 'text-amber-300'}">${stagesCount}/5</span>
-                <div class="w-16 bg-black/50 h-2 rounded-full overflow-hidden border border-amber-400/30">
-                  <div class="h-full bg-gradient-to-r ${isCompleted ? 'from-emerald-500 to-teal-400' : 'from-amber-500 to-red-500'}" style="width: ${(stagesCount / 5) * 100}%"></div>
-                </div>
-              </div>
-            </td>
-            <td class="p-2.5 sm:p-3 text-center font-bold text-amber-300">${p.totalStars || 0} ⭐</td>
-            <td class="p-2.5 sm:p-3 text-center font-mono text-amber-200/80">${timeStr}</td>
-            <td class="p-2.5 sm:p-3 text-[11px] text-amber-200/70">
-              ${p.completedAt ? `<span class="text-emerald-300 font-bold">${p.completedAt}</span>` : '<span class="text-stone-500">-</span>'}
-            </td>
-            <td class="p-2.5 sm:p-3 text-center">
-              ${
-                isCompleted
-                  ? '<span class="px-2 py-1 rounded-full bg-emerald-950 text-emerald-300 font-bold border border-emerald-400/50 text-[10px] shadow-sm">👑 สำเร็จครบ 5 ด่าน</span>'
-                  : '<span class="px-2 py-1 rounded-full bg-indigo-950 text-indigo-300 font-medium border border-indigo-500/30 text-[10px]">⏳ กำลังเล่น</span>'
-              }
-            </td>
-          `;
-          tbody.appendChild(tr);
-        });
-      },
-
-            // ล้างข้อมูลกระดานแข่งขันทั้งหมดเพื่อเริ่มการแข่งขันรอบใหม่ (จำนวนผู้เล่นจะเป็น 0 คนทันที)
-      resetCompetition() {
-        if (!confirm('⚠️ ยืนยันการล้างข้อมูลกระดานแข่งขันทั้งหมด?\n\nข้อมูลผู้เล่น สถิติ และอันดับทั้งหมดจะถูกล้างเป็น 0 เพื่อเริ่มการแข่งขันรอบใหม่!')) {
-          return;
-        }
-
-        // 1. ล้างข้อมูลผู้เล่นทั้งหมดให้เป็น 0 ทันที
-        this.allPlayers = {};
-        try {
-          localStorage.setItem('xmas_all_players', '{}');
-          localStorage.removeItem('xmas_diff_stars');
-          localStorage.removeItem('xmas_player_name');
-          localStorage.removeItem('xmas_player_contact');
-        } catch (e) {}
-
-        // 2. หากเชื่อมต่อ Firebase ให้ลบข้อมูลบน Cloud ด้วยแบบเรียลไทม์
-        if (this.isFirebaseActive && this.firebaseDb) {
-          try {
-            this.firebaseDb.ref('xmas_players').set(null);
-          } catch (e) {
-            console.error('Firebase remove error:', e);
-          }
-        }
-
-        // 3. รีเซ็ตโปรไฟล์และความก้าวหน้าของผู้เล่นเครื่องนี้
-        this.currentPlayer = {
-          id: this.currentPlayer.id,
-          name: 'ผู้เล่นนิรนาม',
-          contact: '',
-          currentStage: 1,
-          stagesCompleted: [],
-          totalStars: 0,
-          starsDetail: [0, 0, 0, 0, 0],
-          totalTimeSpent: 0,
-          completedAll: false,
-          completedAt: null,
-          lastActive: ''
-        };
-
-        // 4. รีเซ็ต GameState ในเครื่อง
-        GameState.stageStars = [0, 0, 0, 0, 0];
-        GameState.foundDiffs.clear();
-
-        // 5. รีเซ็ตชื่อบน Navbar
-        const navName = document.getElementById('nav-player-name');
-        if (navName) navName.textContent = 'ลงทะเบียนผู้เล่น';
-
-        // 6. รีเซ็ตการแสดงผลระบบสุ่มรางวัล
-        const animText = document.getElementById('raffle-anim-text');
-        if (animText) animText.textContent = 'พร้อมสำหรับการสุ่มจับรางวัล 🎄';
-        const resBox = document.getElementById('raffle-results-container');
-        if (resBox) resBox.classList.add('hidden');
-        const winnersGrid = document.getElementById('raffle-winners-grid');
-        if (winnersGrid) winnersGrid.innerHTML = '';
-        const rafflePool = document.getElementById('raffle-pool-count');
-        if (rafflePool) rafflePool.textContent = '0';
-
-        // 7. โหลดด่านที่ 1 ใหม่
-        loadStage(0);
-
-        // 8. วาดแดชบอร์ดใหม่ทั้งหมด (จำนวนผู้เล่นจะเป็น 0 คนทันที)
-        this.renderAllDashboards();
-
-        showToast('🏁 ล้างกระดานแข่งขันเรียบร้อย! จำนวนผู้เล่นเป็น 0 คน พร้อมเริ่มแข่งใหม่', 'success');
-      },
-
-      // ระบบส่งออกข้อมูลผู้เล่นเป็นไฟล์ CSV (รองรับภาษาไทยใน Microsoft Excel)
       exportCSV() {
-        const players = this.getSortedPlayers(false);
+        const players = this.getSortedPlayers();
         const headers = ['ลำดับ', 'ชื่อเล่น', 'ชื่อกลุ่ม', 'ด่านปัจจุบัน', 'จำนวนด่านที่ผ่าน', 'ดาวสะสม', 'เวลารวม(วินาที)', 'เวลาที่พิชิตครบ5ด่าน', 'สถานะ', 'เปิดใช้งานล่าสุด'];
         const rows = [headers.join(',')];
 
@@ -1569,7 +1555,7 @@
           const completedAt = p.completedAt ? '"' + p.completedAt + '"' : '""';
           const name = '"' + (p.name || '').replace(/"/g, '""') + '"';
           const contact = '"' + (p.contact || '').replace(/"/g, '""') + '"';
-          const stageStr = '"ด่าน ' + (p.currentStage || 1) + '"';
+          const stageStr = '"ด่าน ' + (p.currentStage || 1) + '/5"';
           const row = [i + 1, name, contact, stageStr, stagesCount + '/5', p.totalStars || 0, p.totalTimeSpent || 0, completedAt, '"' + status + '"', '"' + (p.lastActive || '') + '"'];
           rows.push(row.join(','));
         });
@@ -1579,13 +1565,12 @@
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.setAttribute('href', url);
-        link.setAttribute('download', 'xmas_detective_players_' + Date.now() + '.csv');
+        link.setAttribute('download', 'xmas_detective_50_players_' + Date.now() + '.csv');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
       },
 
-      // ระบบสุ่มจับรางวัล Lucky Draw
       runLuckyDraw(count, prizeTitle) {
         const completedPlayers = Object.values(this.allPlayers).filter(p => p.completedAll);
         if (completedPlayers.length === 0) {
@@ -1603,43 +1588,40 @@
         let counter = 0;
         const totalSpins = 25;
 
-        // แอนิเมชันสุ่มสลับชื่ออย่างรวดเร็ว
         spinTimer = setInterval(() => {
           counter++;
           const randomPlayer = completedPlayers[Math.floor(Math.random() * completedPlayers.length)];
-          animText.textContent = `🎲 กำลังสุ่ม... 👉 ${randomPlayer.name}`;
+          animText.textContent = `🎲 กำลังสุ่ม... 👉 ${randomPlayer.name} (${randomPlayer.contact || ''})`;
           AudioEngine.playTick();
 
           if (counter >= totalSpins) {
             clearInterval(spinTimer);
 
-            // สุ่มผู้โชคดีตัวจริงแบบไม่ซ้ำกัน
+            // สุ่มผู้โชคดีไม่ซ้ำกัน
             const shuffled = [...completedPlayers].sort(() => 0.5 - Math.random());
             const winners = shuffled.slice(0, Math.min(count, shuffled.length));
 
             animText.innerHTML = `🎉 ยินดีกับผู้โชคดีทั้ง ${winners.length} ท่าน! 🏆`;
             AudioEngine.playFanfare();
 
-            // ยิงพลุเฉลิมฉลอง Confetti
             if (typeof confetti === 'function') {
-              confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
+              confetti({ particleCount: 150, spread: 90, origin: { y: 0.6 } });
             }
 
-            // แสดงผลการ์ดผู้โชคดี
             resultsContainer.classList.remove('hidden');
             winners.forEach((w, idx) => {
               const card = document.createElement('div');
-              card.className = 'p-3 rounded-2xl bg-gradient-to-br from-amber-950/80 to-red-950/80 border-2 border-amber-300 shadow-xl flex flex-col justify-between';
+              card.className = 'p-3.5 rounded-2xl bg-gradient-to-br from-amber-950/90 to-red-950/90 border-2 border-amber-300 shadow-xl flex flex-col justify-between';
               card.innerHTML = `
                 <div>
                   <div class="flex items-center justify-between mb-1">
                     <span class="text-xs font-bold text-amber-300">รางวัลที่ ${idx + 1}</span>
-                    <span class="text-xs">🎁</span>
+                    <span class="text-base">🎁</span>
                   </div>
-                  <div class="font-extrabold text-sm sm:text-base text-amber-100">${w.name}</div>
-                  <div class="text-[11px] text-amber-300/80 mt-0.5 font-medium">🏷️ กลุ่ม: ${w.contact || '-'}</div>
+                  <div class="font-extrabold text-base sm:text-lg text-amber-100">${w.name}</div>
+                  <div class="text-xs text-amber-300 font-semibold mt-0.5">🏷️ ${w.contact || 'ไม่มีกลุ่ม'}</div>
                 </div>
-                <div class="mt-2 pt-2 border-t border-amber-400/20 text-[10px] text-emerald-300 font-semibold flex items-center justify-between">
+                <div class="mt-2.5 pt-2 border-t border-amber-400/30 text-[11px] text-emerald-300 font-bold flex items-center justify-between">
                   <span>${prizeTitle}</span>
                   <span>⭐ ${w.totalStars} ดาว</span>
                 </div>
@@ -1647,11 +1629,10 @@
               winnersGrid.appendChild(card);
             });
 
-                        // ปุ่มคัดลอกรายชื่อ
             document.getElementById('btn-copy-winners').onclick = () => {
               let copyLines = ['🎉 รายชื่อผู้โชคดีกิจกรรมคริสต์มาส (' + prizeTitle + '):'];
               winners.forEach((w, i) => {
-                copyLines.push((i + 1) + '. ' + w.name + ' (กลุ่ม: ' + (w.contact || '-') + ')');
+                copyLines.push((i + 1) + '. ' + w.name + ' (' + (w.contact || 'ไม่มีกลุ่ม') + ')');
               });
               navigator.clipboard.writeText(copyLines.join('\n')).then(() => {
                 showToast('📋 คัดลอกรายชื่อผู้โชคดีเรียบร้อยแล้ว!', 'success');
@@ -1659,6 +1640,85 @@
             };
           }
         }, 90);
+      },
+
+      loadSample50() {
+        this.allPlayers = { ...this.sample50Players };
+        this.saveLocalPlayers();
+        this.renderAllDashboards();
+        showToast('👥 โหลดข้อมูลจำลอง 50 คนเรียบร้อยแล้ว! (ผ่านครบ 5 ด่าน 18 คน)', 'success');
+      },
+
+      resetCompetition() {
+        if (!confirm('⚠️ ยืนยันการล้างข้อมูลกระดานแข่งขันทั้งหมด?\n\nข้อมูลผู้เล่น สถิติ และอันดับทั้งหมดจะถูกล้างเป็น 0 คนทันที เพื่อเริ่มการแข่งขันรอบใหม่!')) {
+          return;
+        }
+
+        // 1. ล้างข้อมูลผู้เล่นทั้งหมด
+        this.allPlayers = {};
+        try {
+          localStorage.setItem('xmas_all_players', '{}');
+          localStorage.removeItem('xmas_diff_stars');
+          localStorage.removeItem('xmas_player_name');
+          localStorage.removeItem('xmas_player_contact');
+          localStorage.removeItem('xmas_player_time');
+        } catch (e) {}
+
+        // 2. ลบบน Firebase ถ้าต่ออยู่
+        if (this.isFirebaseActive && this.firebaseDb) {
+          try {
+            this.firebaseDb.ref('xmas_players').set(null);
+          } catch (e) {
+            console.error('Firebase remove error:', e);
+          }
+        }
+
+        // 3. รีเซ็ตผู้เล่นเครื่องนี้
+        this.currentPlayer = {
+          id: this.currentPlayer.id,
+          name: '',
+          contact: '',
+          currentStage: 1,
+          stagesCompleted: [],
+          totalStars: 0,
+          starsDetail: [0, 0, 0, 0, 0],
+          totalTimeSpent: 0,
+          completedAll: false,
+          completedAt: null,
+          lastActive: ''
+        };
+
+        // 4. รีเซ็ต GameState
+        GameState.stageStars = [0, 0, 0, 0, 0];
+        GameState.foundDiffs.clear();
+
+        // 5. รีเซ็ตแถบเมนู
+        const navName = document.getElementById('nav-player-name');
+        if (navName) navName.textContent = 'ลงทะเบียนผู้เล่น';
+
+        // 6. รีเซ็ต Lucky Draw UI
+        const animText = document.getElementById('raffle-anim-text');
+        if (animText) animText.textContent = 'พร้อมสำหรับการสุ่มจับรางวัล 🎄';
+        const resBox = document.getElementById('raffle-results-container');
+        if (resBox) resBox.classList.add('hidden');
+        const winnersGrid = document.getElementById('raffle-winners-grid');
+        if (winnersGrid) winnersGrid.innerHTML = '';
+        const rafflePool = document.getElementById('raffle-pool-count');
+        if (rafflePool) rafflePool.textContent = '0';
+
+        // 7. โหลดด่านที่ 1
+        loadStage(0);
+
+        // 8. อัปเดตแดชบอร์ด (เป็น 0 คนทันที)
+        this.renderAllDashboards();
+
+        // 9. แสดงหน้าต่างลงทะเบียนใหม่ทันที
+        const profileModal = document.getElementById('modal-player-profile');
+        const closeBtn = document.getElementById('btn-close-profile');
+        if (closeBtn) closeBtn.classList.add('hidden');
+        if (profileModal) profileModal.classList.remove('hidden');
+
+        showToast('🏁 ล้างกระดานแข่งขันเรียบร้อย! จำนวนผู้เล่นเป็น 0 คน พร้อมเริ่มแข่งใหม่', 'success');
       }
     };
 
@@ -1833,6 +1893,7 @@
       GameState.timerInterval = setInterval(() => {
         if (GameState.isGameOver) return;
         GameState.timeLeft--;
+        DatabaseManager.addPlayTime(1);
 
         if (GameState.timeLeft <= 0) {
           GameState.timeLeft = 0;
@@ -2000,7 +2061,6 @@
     function loadStage(index) {
       GameState.currentStageIndex = index;
       DatabaseManager.updateCurrentStage(index);
-      DatabaseManager.updateCurrentStage(index);
       GameState.foundDiffs.clear();
       GameState.correctHits = 0;
       GameState.missHits = 0;
@@ -2056,7 +2116,6 @@
         stars
       );
       GameState.saveProgress();
-      DatabaseManager.updateStageCleared(GameState.currentStageIndex, stars, GameState.timeLeft);
       DatabaseManager.updateStageCleared(GameState.currentStageIndex, stars, GameState.timeLeft);
 
       // อัปเดต Modal
@@ -2372,31 +2431,46 @@
       // กำหนด Event Listeners สำหรับ Profile, Leaderboard, Admin Dashboard
       // ==========================================
       DatabaseManager.init();
-      document.getElementById('nav-player-name').textContent = DatabaseManager.currentPlayer.name;
+      
+      const navPlayerName = document.getElementById('nav-player-name');
+      if (navPlayerName) {
+        navPlayerName.textContent = DatabaseManager.isRegistered() 
+          ? DatabaseManager.currentPlayer.name + (DatabaseManager.currentPlayer.contact ? ' (' + DatabaseManager.currentPlayer.contact + ')' : '')
+          : 'ลงทะเบียนผู้เล่น';
+      }
       DatabaseManager.updateHeaderBadge();
 
-      // ตรวจสอบว่าถ้ายังไม่เคยตั้งชื่อ ให้เปิดหน้าต่างลงทะเบียนอัตโนมัติ
-      if (!localStorage.getItem('xmas_player_name')) {
-        setTimeout(() => {
-          document.getElementById('modal-player-profile').classList.remove('hidden');
-        }, 600);
+      // ตรวจสอบว่าถ้ายังไม่เคยลงทะเบียน ให้บังคับเปิดหน้าต่างลงทะเบียนทันทีและซ่อนปุ่มปิด
+      const profileModal = document.getElementById('modal-player-profile');
+      const closeProfileBtn = document.getElementById('btn-close-profile');
+      if (!DatabaseManager.isRegistered()) {
+        if (closeProfileBtn) closeProfileBtn.classList.add('hidden');
+        if (profileModal) profileModal.classList.remove('hidden');
       }
 
       // ระบบโปรไฟล์ผู้เล่น
-      const profileModal = document.getElementById('modal-player-profile');
       document.getElementById('btn-player-profile').addEventListener('click', () => {
-        document.getElementById('input-player-name').value = DatabaseManager.currentPlayer.name !== 'ผู้เล่นนิรนาม' ? DatabaseManager.currentPlayer.name : '';
+        document.getElementById('input-player-name').value = DatabaseManager.currentPlayer.name || '';
         document.getElementById('input-player-contact').value = DatabaseManager.currentPlayer.contact || '';
+        if (closeProfileBtn) closeProfileBtn.classList.remove('hidden');
         profileModal.classList.remove('hidden');
       });
-      document.getElementById('btn-close-profile').addEventListener('click', () => profileModal.classList.add('hidden'));
+      if (closeProfileBtn) {
+        closeProfileBtn.addEventListener('click', () => profileModal.classList.add('hidden'));
+      }
+
       document.getElementById('form-player-profile').addEventListener('submit', (e) => {
         e.preventDefault();
-        const name = document.getElementById('input-player-name').value;
-        const contact = document.getElementById('input-player-contact').value;
+        const name = document.getElementById('input-player-name').value.trim();
+        const contact = document.getElementById('input-player-contact').value.trim();
+        if (!name || !contact) {
+          alert('กรุณากรอกทั้งชื่อเล่นและชื่อกลุ่มให้ครบถ้วน');
+          return;
+        }
         DatabaseManager.setPlayerProfile(name, contact);
+        if (closeProfileBtn) closeProfileBtn.classList.remove('hidden');
         profileModal.classList.add('hidden');
-        showToast('🎄 ยินดีต้อนรับคุณ <strong>' + name + '</strong> สู่การจับผิดภาพคริสต์มาส!', 'success');
+        showToast('🎄 ยินดีต้อนรับคุณ <strong>' + name + '</strong> (' + contact + ') เข้าสู่การแข่งขัน!', 'success');
       });
 
       // ระบบกระดานผู้นำ (Leaderboard)
@@ -2447,8 +2521,7 @@
         if (targetTab === 'players') {
           tabAdmPlayers.className = 'btn-festive px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-500 text-red-950 border border-amber-200 shadow cursor-pointer';
           viewAdmPlayers.classList.remove('hidden');
-          DatabaseManager.renderAdminOverview();
-          DatabaseManager.renderAdminPlayerTable();
+          DatabaseManager.renderAllDashboards();
         } else if (targetTab === 'lucky') {
           tabAdmLucky.className = 'btn-festive px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-500 text-red-950 border border-amber-200 shadow cursor-pointer';
           viewAdmLucky.classList.remove('hidden');
@@ -2466,24 +2539,42 @@
       tabAdmDb.addEventListener('click', () => switchAdminTab('db'));
 
       document.getElementById('btn-admin-dashboard').addEventListener('click', () => {
+        if (DatabaseManager.isRegistered()) {
+          DatabaseManager.updateCurrentPlayerData();
+        } else {
+          DatabaseManager.renderAllDashboards();
+        }
         switchAdminTab('players');
         adminModal.classList.remove('hidden');
       });
       document.getElementById('btn-close-admin').addEventListener('click', () => adminModal.classList.add('hidden'));
       document.getElementById('btn-close-admin-bottom').addEventListener('click', () => adminModal.classList.add('hidden'));
 
-      // Filter & Search ใน Admin Dashboard
+      // Filter, Search, Group, Sort ใน Admin Dashboard
       document.getElementById('input-admin-search').addEventListener('input', () => DatabaseManager.renderAdminPlayerTable());
       document.getElementById('select-admin-filter').addEventListener('change', () => DatabaseManager.renderAdminPlayerTable());
+      document.getElementById('select-admin-group').addEventListener('change', () => DatabaseManager.renderAdminPlayerTable());
+      document.getElementById('select-admin-sort').addEventListener('change', () => DatabaseManager.renderAdminPlayerTable());
+
       document.getElementById('btn-refresh-admin').addEventListener('click', () => {
         DatabaseManager.renderAllDashboards();
         showToast('🔄 รีเฟรชข้อมูลแดชบอร์ดเรียบร้อยแล้ว', 'info');
       });
 
+      // ปุ่มโหลดข้อมูลจำลอง 50 คนสำหรับทดสอบระบบ
+      document.getElementById('btn-load-sample-50').addEventListener('click', () => {
+        DatabaseManager.loadSample50();
+      });
+
       // ปุ่มส่งออก CSV
       document.getElementById('btn-export-csv').addEventListener('click', () => {
         DatabaseManager.exportCSV();
-        showToast('📥 กำลังดาวน์โหลดไฟล์ CSV สำหรับ Excel...', 'success');
+        showToast('📥 กำลังดาวน์โหลดไฟล์ Excel (CSV)...', 'success');
+      });
+
+      // ปุ่มล้างกระดานเริ่มแข่งใหม่
+      document.getElementById('btn-reset-competition').addEventListener('click', () => {
+        DatabaseManager.resetCompetition();
       });
 
       // ระบบสุ่มจับรางวัล (Lucky Draw)
@@ -2504,37 +2595,31 @@
           return;
         }
         try {
-          JSON.parse(val);
-          localStorage.setItem('xmas_firebase_config', val);
+          let cleanStr = val;
+          if (cleanStr.includes('apiKey')) {
+            const startIdx = cleanStr.indexOf('{');
+            const endIdx = cleanStr.lastIndexOf('}');
+            if (startIdx !== -1 && endIdx !== -1) {
+              cleanStr = cleanStr.substring(startIdx, endIdx + 1);
+            }
+          }
+          JSON.parse(cleanStr);
+          localStorage.setItem('xmas_firebase_config', cleanStr);
           DatabaseManager.initFirebaseIfConfigured();
-          showToast('💾 บันทึกและเชื่อมต่อ Firebase สำเร็จ!', 'success');
+          showToast('💾 บันทึกและเชื่อมต่อ Firebase สำเร็จ! ซิงค์สด 50+ เครื่อง', 'success');
         } catch (e) {
-          showToast('❌ รูปแบบ Firebase Config ไม่ถูกต้อง (ต้องเป็น JSON)', 'error');
+          showToast('❌ รูปแบบ Firebase Config ไม่ถูกต้อง (กรุณาวางโค้ด config)', 'error');
         }
       });
 
-      // เติมข้อมูลผู้เล่นจำลอง
-      document.getElementById('btn-load-sample-players').addEventListener('click', () => {
-        DatabaseManager.allPlayers = { ...DatabaseManager.allPlayers, ...DatabaseManager.samplePlayers };
-        DatabaseManager.saveLocalPlayers();
-        DatabaseManager.renderAllDashboards();
-        showToast('👥 เติมข้อมูลผู้เล่นจำลอง 5 ท่านเรียบร้อยแล้ว!', 'success');
-      });
-
-      // ล้างข้อมูลผู้เล่นทั้งหมด
-            // ปุ่มล้างกระดานเริ่มการแข่งขันใหม่
-      document.getElementById('btn-reset-competition').addEventListener('click', () => {
-        DatabaseManager.resetCompetition();
-      });
-
+      // ล้างข้อมูลในแท็บ DB ก็เรียก resetCompetition เช่นกัน
       document.getElementById('btn-clear-all-data').addEventListener('click', () => {
         DatabaseManager.resetCompetition();
-        if (confirm('คุณต้องการล้างข้อมูลผู้เล่นทั้งหมดใช่หรือไม่?')) {
-          DatabaseManager.allPlayers = {};
-          DatabaseManager.updateCurrentPlayerData();
-          DatabaseManager.renderAllDashboards();
-          showToast('🗑️ ล้างข้อมูลผู้เล่นทั้งหมดเรียบร้อยแล้ว', 'info');
-        }
+      });
+
+      // โหลดตัวอย่างในแท็บ DB ก็เรียก loadSample50
+      document.getElementById('btn-load-sample-players').addEventListener('click', () => {
+        DatabaseManager.loadSample50();
       });
 
       // ปุ่มเสียงเอฟเฟกต์
